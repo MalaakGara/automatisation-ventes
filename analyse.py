@@ -1,7 +1,11 @@
 import pandas as pd
 
 # lire le fichier
-df = pd.read_csv('ventes.csv')
+try:
+    df = pd.read_csv('ventes.csv')
+except FileNotFoundError:
+    print("❌ fichier ventes.csv introuvable")
+    exit()
 
 # calculs
 df['CA_Brut'] = df['Prix'] * df['Quantite']
