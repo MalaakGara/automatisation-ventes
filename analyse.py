@@ -7,6 +7,11 @@ except FileNotFoundError:
     print("❌ fichier ventes.csv introuvable")
     exit()
 
+colonnes = ['ID', 'Prix', 'Quantite', 'Remise']
+if not all(col in df.columns for col in colonnes):
+    print("❌ colonnes manquantes")
+    exit() 
+    
 # calculs
 df['CA_Brut'] = df['Prix'] * df['Quantite']
 df['CA_Net'] = df['CA_Brut'] * (1 - df['Remise'] / 100)
