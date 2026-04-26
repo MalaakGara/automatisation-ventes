@@ -31,6 +31,8 @@ print(df.sort_values(by='CA_Net', ascending=False).head(3))
 max_id = df.loc[df['CA_Net'].idxmax(), 'ID']
 print("Produit avec CA_Net max :", max_id)
 df.to_csv('resultats_final.csv', index=False)
+print("✅ Fichier resultats_final.csv créé") 
+
 import matplotlib.pyplot as plt
 
 # graphique
