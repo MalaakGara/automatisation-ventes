@@ -77,7 +77,7 @@ plt.show()
 plt.figure(figsize=(6,6))
 plt.pie(df['CA_Net'], labels=df['ID'], autopct='%1.1f%%')
 plt.title("Répartition du CA Net")
-plt.savefig("ca_pie.png")
+plt.savefig("graphs/ca_pie.png")
 plt.show()
 
 #histogramme
