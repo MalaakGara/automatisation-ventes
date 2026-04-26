@@ -74,3 +74,12 @@ plt.pie(df['CA_Net'], labels=df['ID'], autopct='%1.1f%%')
 plt.title("Répartition du CA Net")
 plt.savefig("ca_pie.png")
 plt.show()
+#histogramme
+plt.figure()
+plt.hist(df['CA_Net'], bins=5)
+plt.title("Distribution du CA Net")
+plt.xlabel("CA Net")
+plt.ylabel("Fréquence")
+
+plt.savefig("ca_hist.png")
+plt.show()
