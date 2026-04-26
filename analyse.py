@@ -1,5 +1,5 @@
 import pandas as pd
-
+import matplotlib.pyplot as plt
 # lire le fichier
 try:
     df = pd.read_csv('ventes.csv')
@@ -33,7 +33,7 @@ print("Produit avec CA_Net max :", max_id)
 df.to_csv('resultats_final.csv', index=False)
 print("✅ Fichier resultats_final.csv créé") 
 
-import matplotlib.pyplot as plt
+
 
 # graphique
 colors = ['blue'] * len(df)
