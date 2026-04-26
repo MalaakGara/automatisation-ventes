@@ -22,6 +22,10 @@ print(df.head())
 # CA Net total
 total = round(df['CA_Net'].sum(), 2)
 print("CA Net Total :", total)
+print("CA moyen :", round(df['CA_Net'].mean(), 2))
+print("Nombre de produits :", len(df))
+print("Top 3 produits :")
+print(df.sort_values(by='CA_Net', ascending=False).head(3))
 
 # produit avec CA max
 max_id = df.loc[df['CA_Net'].idxmax(), 'ID']
