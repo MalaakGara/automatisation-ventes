@@ -1,5 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+os.makedirs("graphs", exist_ok=True)
 # lire le fichier
 try:
     df = pd.read_csv('ventes.csv')
@@ -51,7 +53,9 @@ plt.ylabel("CA Net")
 plt.savefig("ca_par_produit.png")
 plt.show()
 print("✅ Graphique enregistré")
+
 #bar chart
+
 plt.figure(figsize=(10,5))
 bars = plt.bar(df['ID'], df['CA_Net'])
 
@@ -68,13 +72,16 @@ plt.ylabel("CA Net")
 
 plt.savefig("ca_bar_ameliore.png")
 plt.show()
+
 #pie chart
 plt.figure(figsize=(6,6))
 plt.pie(df['CA_Net'], labels=df['ID'], autopct='%1.1f%%')
 plt.title("Répartition du CA Net")
 plt.savefig("ca_pie.png")
 plt.show()
+
 #histogramme
+
 plt.figure()
 plt.hist(df['CA_Net'], bins=5)
 plt.title("Distribution du CA Net")
