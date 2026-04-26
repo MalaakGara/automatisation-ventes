@@ -70,7 +70,7 @@ plt.title("CA Net par produit")
 plt.xlabel("ID Produit")
 plt.ylabel("CA Net")
 
-plt.savefig("ca_bar_ameliore.png")
+plt.savefig("graphs/ca_bar_ameliore.png")
 plt.show()
 
 #pie chart
