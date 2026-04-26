@@ -50,7 +50,7 @@ plt.title("CA Net par produit")
 plt.xlabel("ID Produit")
 plt.ylabel("CA Net")
 
-plt.savefig("ca_par_produit.png")
+plt.savefig("graphs/ca_par_produit.png")
 plt.show()
 print("✅ Graphique enregistré")
 
