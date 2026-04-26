@@ -38,7 +38,10 @@ colors = ['blue'] * len(df)
 max_index = df['CA_Net'].idxmax()
 colors[max_index] = 'red'
 
+plt.figure(figsize=(10,5))
+plt.xticks(rotation=45)
 plt.bar(df['ID'], df['CA_Net'], color=colors)
+
 plt.title("CA Net par produit")
 plt.xlabel("ID Produit")
 plt.ylabel("CA Net")
