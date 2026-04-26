@@ -88,5 +88,5 @@ plt.title("Distribution du CA Net")
 plt.xlabel("CA Net")
 plt.ylabel("Fréquence")
 
-plt.savefig("ca_hist.png")
+plt.savefig("graphs/ca_hist.png")
 plt.show()
