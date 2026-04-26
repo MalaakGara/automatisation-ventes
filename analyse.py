@@ -50,3 +50,4 @@ plt.ylabel("CA Net")
 
 plt.savefig("ca_par_produit.png")
 plt.show()
+print("✅ Graphique enregistré")
