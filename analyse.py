@@ -53,6 +53,7 @@ plt.ylabel("CA Net")
 
 plt.savefig("graphs/ca_par_produit.png")
 plt.show()
+plt.close()
 print("✅ Graphique enregistré")
 
 #bar chart
@@ -73,6 +74,7 @@ plt.ylabel("CA Net")
 
 plt.savefig("graphs/ca_bar_ameliore.png")
 plt.show()
+plt.close()
 
 #pie chart
 plt.figure(figsize=(6,6))
@@ -80,7 +82,7 @@ plt.pie(df['CA_Net'], labels=df['ID'], autopct='%1.1f%%')
 plt.title("Répartition du CA Net")
 plt.savefig("graphs/ca_pie.png")
 plt.show()
-
+plt.close()
 #histogramme
 
 plt.figure()
@@ -91,3 +93,4 @@ plt.ylabel("Fréquence")
 
 plt.savefig("graphs/ca_hist.png")
 plt.show()
+plt.close()
