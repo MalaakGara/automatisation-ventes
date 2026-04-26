@@ -51,3 +51,20 @@ plt.ylabel("CA Net")
 plt.savefig("ca_par_produit.png")
 plt.show()
 print("✅ Graphique enregistré")
+#bar chart
+plt.figure(figsize=(10,5))
+bars = plt.bar(df['ID'], df['CA_Net'])
+
+# ajouter valeurs sur les barres
+for bar in bars:
+    yval = bar.get_height()
+    plt.text(bar.get_x() + bar.get_width()/2, yval, round(yval,2),
+             ha='center', va='bottom')
+
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.title("CA Net par produit")
+plt.xlabel("ID Produit")
+plt.ylabel("CA Net")
+
+plt.savefig("ca_bar_ameliore.png")
+plt.show()
