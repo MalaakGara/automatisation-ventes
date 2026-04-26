@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 os.makedirs("graphs", exist_ok=True)
+print("📁 Dossier graphs créé dans :", os.getcwd())
 # lire le fichier
 try:
     df = pd.read_csv('ventes.csv')
