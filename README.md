@@ -63,3 +63,4 @@ Mettre en pratique les compétences en Python, manipulation de données et visua
 ## Auteurs
 Malak Gara G1
 Chahd Jlassi G1 
+Fakhreddine Barguaoi (Candidat libre )
