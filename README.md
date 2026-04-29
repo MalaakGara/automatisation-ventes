@@ -51,7 +51,7 @@ Après exécution :
 
 *  `resultats_final.csv` → données complètes avec calculs
 *  `ca_par_produit.png` → graphique du CA Net
-
+*  `graph` → tous les graphiques
 
 
 ##  Objectif du projet
